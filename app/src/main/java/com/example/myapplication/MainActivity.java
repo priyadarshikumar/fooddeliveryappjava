@@ -10,6 +10,7 @@ import androidx.appcompat.app.AppCompatActivity;
 public class MainActivity extends AppCompatActivity {
 
     private Button btnViewRestaurants;
+    private Button btnViewCart;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -22,6 +23,14 @@ public class MainActivity extends AppCompatActivity {
             public void onClick(View v) {
                 // Start the new activity here
                 startActivity(new Intent(MainActivity.this, RestaurantActivity.class));
+            }
+        });
+
+        btnViewCart = findViewById(R.id.btnViewCart);
+        btnViewCart.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                startActivity(new Intent(MainActivity.this, CartActivity.class));
             }
         });
     }
