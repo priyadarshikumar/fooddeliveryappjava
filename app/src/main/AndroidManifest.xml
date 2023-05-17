@@ -28,6 +28,10 @@
         <activity
             android:name=".CartActivity"
             android:label="Cart Activity" />
+        <activity
+            android:name=".SettingsActivity"
+            android:label="Settings Activity" >
+        </activity>
 
     </application>
 
